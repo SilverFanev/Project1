@@ -8,12 +8,14 @@
 </head>
 <body>
     <header>
-        <h1>Logo du Site</h1>
+        <a href="index.html">
+          <img src="assets/icons/Reservia.png" alt="Logo de l'entreprise" class="logo">
+        </a>
         <nav>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="construct.html" class="link">Accueil</a></li>
+                <li><a href="construct.html" class="link">À propos</a></li>
+                <li><a href="construct.html" class="link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -21,7 +23,7 @@
     <main>
         <!-- Formulaire de recherche -->
         <section class="search-bar">
-            <input type="text" placeholder="Rechercher un hébergement...">
+            <input type="text" placeholder="Rechercher un hébergement">
             <button>Rechercher</button>
         </section>
 
@@ -35,71 +37,104 @@
 
         <!-- Liste des cartes d’hébergement -->
       <section class="accommodations">
+        <a href="construct.html" class="link">
           <article class="card">
-              <img src="assets/images/hotel1.jpg" alt="Hôtel 1">
+              <img src="assets/images/hotel/image1.jpg" alt="Hôtel à 1 étoile">
               <h2>Auberge la Canebière</h2>
               <p>Nuit à partir de 25€</p>
-              <span class="stars">⭐⭐⭐⭐</span>
+              <span class="stars">⭐</span>
           </article>
-
+         </a>
+         <a href="construct.html" class="link">
           <article class="card">
-              <img src="assets/images/hotel2.jpg" alt="Hôtel 2">
+              <img src="assets/images/hotel/image2.jpg" alt="Hôtel à 2 étoiles">
               <h2>Hôtel du port</h2>
               <p>Nuit à partir de 52€</p>
-              <span class="stars">⭐⭐⭐⭐⭐</span>
+              <span class="stars">⭐⭐</span>
           </article>
-
+        </a>
+        <a href="construct.html" class="link">
           <article class="card">
-              <img src="assets/images/hotel3.jpg" alt="Hôtel 3">
+              <img src="assets/images/hotel/image3.jpg" alt="Hôtel à 3 étoiles">
               <h2>Hôtel Les Mouettes</h2>
               <p>Nuit à partir de 75€</p>
-              <span class="stars">⭐⭐⭐⭐</span>
+              <span class="stars">⭐⭐⭐</span>
           </article>
+        </a>
+        <a href="construct.html" class="link">
+          <article class="card">
+              <img src="assets/images/hotel/image4.jpg" alt="Hôtel à 4 étoiles">
+              <h2>Da Vinci hôtel</h2>
+              <p>Nuit à partir de 105€</p>
+              <span class="stars">⭐⭐⭐</span>
+          </article>
+         </a>
+         <a href="construct.html" class="link">
+          <article class="card">
+              <img src="assets/images/hotel/image5.jpg" alt="Hôtel à 5 étoiles">
+              <h2>Luxorius Nature</h2>
+              <p>Nuit à partir de 150€</p>
+              <span class="stars">⭐⭐⭐⭐⭐</span>
+          </article>
+        </a>
       </section>
       <section class="activities">
         <h2>Activités à découvrir</h2>
         <div class="activity-grid">
+          <a href="construct.html" class="link">
             <article class="activity-card">
                 <img src="assets/images/activity1.jpg" alt="Plage">
                 <h3>Plage du Prado</h3>
             </article>
-
+           </a>
+           <a href="construct.html" class="link">
             <article class="activity-card">
                 <img src="assets/images/activity2.jpg" alt="Randonnée">
                 <h3>Randonnée au Calanques</h3>
             </article>
-
+            </a>
+           <a href="construct.html" class="link">
             <article class="activity-card">
                 <img src="assets/images/activity3.jpg" alt="Vieux-Port">
                 <h3>Visite du Vieux-Port</h3>
             </article>
-
+           </a>
+           <a href="construct.html" class="link">
             <article class="activity-card">
                 <img src="assets/images/activity4.jpg" alt="Notre-Dame">
                 <h3>Basilique Notre-Dame</h3>
             </article>
+          </a>
       </section>
         </div>
     </main>
 
     <footer>
         <div class="footer-content">
-            <p>© 2024 - Mon Site Web</p>
+            <p>© 2025 - Reserva Site Web</p>
             <nav>
                 <ul>
-                    <li><a href="#">Mentions légales</a></li>
-                    <li><a href="#">Politique de confidentialité</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="construct.html" class="link">Mentions légales</a></li>
+                    <li><a href="construct.html" class="link">Politique de confidentialité</a></li>
+                    <li><a href="construct.html" class="link">Contact</a></li>
                 </ul>
             </nav>
             <div class="socials">
-                <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
-                <a href="#"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
-                <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+                <a href="construct.html" class="link"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+                <a href="construct.html" class="link"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
+                <a href="construct.html" class="link"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
             </div>
         </div>
     </footer>
+    <script>
+      const boutons = document.querySelectorAll('.filter-btn');
 
+      boutons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          btn.classList.toggle('active');
+        });
+      });
+    </script>
 </body>
 </html>
 
